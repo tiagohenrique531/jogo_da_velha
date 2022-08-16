@@ -10,6 +10,7 @@ function checkjogo(id){
 
     if(opt == "transp.png" && controle) {
         document.getElementById(id).src = "img/" + player +".png";
+        numJog++;
         
         if (player == "preto"){
             player = "vermelho";
@@ -20,7 +21,6 @@ function checkjogo(id){
     
     }
     
-    numJog++;
 
     if (wincheck() && controle){
 
@@ -28,7 +28,7 @@ function checkjogo(id){
         "<div align='center'>VITÓRIA DO PLAYER: " + player + "</div>";
         controle = false;
     }
-    
+
     if (numJog >= 9 && controle){
         document.getElementById("result").innerHTML =
         "<div align='center'>Fim de Jogo!! Deu Velha!!</div>";
