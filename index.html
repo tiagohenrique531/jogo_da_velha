@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">  
+        <title>Atividade Prática - Jogo da Velha</title>
+        <script type="text/javascript" src="externo.js"></script>
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+    </head>
+
+    <body>
+        <header class="cabecalho">
+            <h1 class="cabecalho-titulo">JOGO DA VELHA</h1>
+            <img src="img/bomberman_title_1660x754px.png" class="cabecalho-img">
+        </header>
+
+        <main class="parte1">
+            <section class="parte1-principal">
+                
+                <div class="parte1-bot">
+                    <h3 align="center">Jogar contra BOT:</h3>
+                    <form align="center">
+                        <input type="radio" id="sn" name="sn" value="S" checked="checked"/>
+                        <label><strong>SIM</strong></label>
+                        <input type="radio" id="sn" name="sn" value="N"/>
+                        <label><strong>NÃO</strong></label>
+                    </form>
+                </div>
+
+                <table border="1" align="center" class="parte1-tabela" bordercolor="black">
+                    <tbody>
+                        <tr align="center">
+                            <td><img src="img/transp.png" alt="imagem" id="qd1" onclick="checkjogo(this.id)"/></td>
+                            <td><img src="img/transp.png" alt="imagem" id="qd2" onclick="checkjogo(this.id)"/></td>
+                            <td><img src="img/transp.png" alt="imagem" id="qd3" onclick="checkjogo(this.id)"/></td>
+                        </tr>
+                        <tr align="center">
+                            <td><img src="img/transp.png" alt="imagem" id="qd4" onclick="checkjogo(this.id)"/></td>
+                            <td><img src="img/transp.png" alt="imagem" id="qd5" onclick="checkjogo(this.id)"/></td>
+                            <td><img src="img/transp.png" alt="imagem" id="qd6" onclick="checkjogo(this.id)"/></td>
+                        </tr>
+                        <tr align="center">
+                            <td><img src="img/transp.png" alt="imagem" id="qd7" onclick="checkjogo(this.id)"/></td>
+                            <td><img src="img/transp.png" alt="imagem" id="qd8" onclick="checkjogo(this.id)"/></td>
+                            <td><img src="img/transp.png" alt="imagem" id="qd9" onclick="checkjogo(this.id)"/></td>
+                        </tr>
+                    </tbody>
+                </table>  
+
+                <nav id="result" class="parte1-result"></nav>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+        </footer>
+
+    </body>
+</html>
